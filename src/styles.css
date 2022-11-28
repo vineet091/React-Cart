@@ -1,0 +1,119 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  height: 100%;
+  min-height: 500px;
+}
+
+.productCard {
+  background-color: white;
+  box-shadow: 1px 2px 3px #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.gridBox {
+  display: flex;
+  flex-grow: 1;
+}
+
+.leftGrid {
+  width: 120px;
+  padding: 4px;
+}
+.img {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+}
+
+.qtyActionBox {
+  width: 100%;
+  max-width: 80px;
+  display: flex;
+  margin-top: 4px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.qtyBtn {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background-color: #a1a1a1;
+  font-size: 18px;
+  vertical-align: middle;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.qtyBtn.disabled {
+  background-color: lightgray;
+}
+.qtyInput {
+  flex-grow: 1;
+  width: 20px;
+  margin: 0 3px;
+  text-align: center;
+}
+
+.rightGrid {
+  width: calc(100% - 20px);
+  flex-grow: 1;
+}
+
+.productHeader {
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc {
+  margin: 4px 0;
+  width: 100%;
+  display: flex;
+  font-size: 13px;
+  justify-content: flex-start;
+}
+
+.code {
+  margin: 4px 0;
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bold {
+  font-weight: 600;
+}
+.qty {
+  margin: 4px 0;
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actionBox {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.actBtn {
+  width: 50%;
+  padding: 10px 12px;
+  border-collapse: collapse;
+  border: 0;
+}
+
+.actBtn:nth-child(2) {
+  border-left: 2px solid #ddd;
+}
