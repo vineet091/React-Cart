@@ -2,6 +2,7 @@ import "./styles.css";
 import ProductCard from "./ProductCard";
 import { data } from "./data";
 import { useEffect, useState } from "react";
+import SideBox from "./SideBox";
 
 // Product page - Name, Image, price, description, CTA - add to Cart
 // Cart Page -  Product lists, price bifurcation, total
@@ -48,16 +49,21 @@ export default function CartPage() {
 
   return (
     <div className="App">
-      {cartData?.products.map((product) => {
-        return (
-          <ProductCard
-            product={product}
-            onUpdateQty={onUpdateQty}
-            onRemove={onRemove}
-            onMoveToWishList={onMoveToWishList}
-          />
-        );
-      })}
+      <div className="leftSec">
+        {cartData?.products.map((product) => {
+          return (
+            <ProductCard
+              product={product}
+              onUpdateQty={onUpdateQty}
+              onRemove={onRemove}
+              onMoveToWishList={onMoveToWishList}
+            />
+          );
+        })}
+      </div>
+      <div className="rightSec">
+        <SideBox totalPrice={cartData?.totalPrice} />
+      </div>
     </div>
   );
 }

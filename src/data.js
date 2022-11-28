@@ -6,8 +6,7 @@ export const data = {
       description: "A tin of beans",
       imageUrl: "",
       price: {
-        mrp: "Rs. 1",
-        mrpValue: 1
+        value: 1
       },
       qty: 1
     },
@@ -17,7 +16,7 @@ export const data = {
       description: "A bottle of beer",
       imageUrl: "",
       price: {
-        mrpValue: 2.49
+        value: 2.49
       },
       qty: 1
     },
@@ -27,7 +26,7 @@ export const data = {
       description: "A tin of beans",
       imageUrl: "",
       price: {
-        mrpValue: 0.12
+        value: 0.12
       },
       qty: 1
     }

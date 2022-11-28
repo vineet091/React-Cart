@@ -9,6 +9,7 @@ const ProductCard = ({ product, onRemove, onMoveToWishList, onUpdateQty }) => {
           <div className="qtyActionBox">
             <button
               className="qtyBtn"
+              disabled={product.qty <= 1}
               onClick={() => onUpdateQty(1, product.code)}
             >
               -
@@ -21,6 +22,7 @@ const ProductCard = ({ product, onRemove, onMoveToWishList, onUpdateQty }) => {
             />
             <button
               className="qtyBtn"
+              disabled={product.qty >= 3}
               onClick={() => onUpdateQty(2, product.code)}
             >
               +
@@ -30,7 +32,7 @@ const ProductCard = ({ product, onRemove, onMoveToWishList, onUpdateQty }) => {
         <div className="rightGrid">
           <div className="productHeader">
             <span className="title">{product.name}</span>
-            <span className="price">{product.price?.mrp}</span>
+            <span className="price">{`Rs. ${product.price?.value}`}</span>
           </div>
           <div className="desc">{product.description}</div>
           <div className="code">

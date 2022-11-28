@@ -1,17 +1,55 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
   padding: 10px;
   background-color: #f9f9f9;
   height: 100%;
-  min-height: 500px;
+  min-height: 700px;
+}
+
+.leftSec {
+  width: 70%;
+  float: left;
+}
+.rightSec {
+  width: 30%;
+  float: left;
 }
 
 .productCard {
   background-color: white;
-  box-shadow: 1px 2px 3px #ddd;
+  box-shadow: 0 2px 2px #ddd;
   margin-bottom: 20px;
+  padding: 10px 10px 0;
+}
+
+.sideBox {
+  background-color: white;
+  box-shadow: 0px 2px 2px #ddd;
+  margin: 0 0 0 10px;
   padding: 10px;
+}
+
+.sideboxItem {
+  margin-top: 12px;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+}
+
+.totalPriceBox {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.redirectBtn {
+  width: 100%;
+  padding: 8px 12px;
+  color: white;
+  background-color: green;
+  box-shadow: none;
+  border: 0;
 }
 
 .gridBox {
@@ -26,7 +64,7 @@
 .img {
   width: 80px;
   height: 80px;
-  background-color: gray;
+  background-color: lightgray;
 }
 
 .qtyActionBox {
@@ -49,8 +87,10 @@
   text-align: center;
 }
 
-.qtyBtn.disabled {
-  background-color: lightgray;
+.qtybtn:disabled {
+  background-color: #f3f3f3;
+  opacity: 0.8;
+  cursor: not-allowed;
 }
 .qtyInput {
   flex-grow: 1;
@@ -99,12 +139,11 @@
 }
 
 .actionBox {
-  width: 100%;
   display: flex;
   flex-grow: 1;
   border-top: 1px solid #ddd;
-  padding-top: 10px;
-  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 10px -10px;
 }
 
 .actBtn {
@@ -112,6 +151,8 @@
   padding: 10px 12px;
   border-collapse: collapse;
   border: 0;
+  background-color: #fff;
+  color: blue;
 }
 
 .actBtn:nth-child(2) {
